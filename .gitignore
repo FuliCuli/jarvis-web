@@ -1,0 +1,29 @@
+# IDE files
+.buildpath
+.project
+.settings
+.idea
+nbproject/
+*.sublime-*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project files
+.tmp
+dump.rdb
+node_modules
+bower_components
+lib-cov
+*.seed
+*.log
+*.out
+*.pid
+npm-debug.log
+.node_history
