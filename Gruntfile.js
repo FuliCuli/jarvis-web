@@ -76,6 +76,8 @@ module.exports = function(grunt) {
       },
     },
 
+    clean: [".tmp"]
+
   });
 
 
@@ -88,6 +90,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-filerev');
   grunt.loadNpmTasks('grunt-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   grunt.registerTask('default', ['compass:prod']);
 
@@ -101,7 +104,8 @@ module.exports = function(grunt) {
     'cssmin',
     'uglify',
     // 'filerev',
-    'usemin'
+    'usemin',
+    'clean'
   ]);
 
 };
