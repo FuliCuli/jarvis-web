@@ -27,3 +27,5 @@ lib-cov
 *.pid
 npm-debug.log
 .node_history
+.sass-cache
+dist
