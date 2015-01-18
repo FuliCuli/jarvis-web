@@ -76,6 +76,17 @@ module.exports = function(grunt) {
       },
     },
 
+    ngAnnotate: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '.tmp/concat/scripts',
+          src: '*.js',
+          dest: '.tmp/concat/scripts'
+        }]
+      }
+    },
+
     clean: [".tmp"]
 
   });
@@ -91,6 +102,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-filerev');
   grunt.loadNpmTasks('grunt-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-ng-annotate');
 
   grunt.registerTask('default', ['compass:prod']);
 
@@ -101,11 +113,12 @@ module.exports = function(grunt) {
     'compass:prod',
     'useminPrepare',
     'concat',
+    'ngAnnotate',
     'cssmin',
     'uglify',
     // 'filerev',
     'usemin',
-    'clean'
+    // 'clean'
   ]);
 
 };
