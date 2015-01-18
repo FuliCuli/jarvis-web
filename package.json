@@ -1,6 +1,6 @@
 {
-  "name": "Jarvis Web",
-  "version": "0.1",
+  "name": "jarvis-web",
+  "version": "0.1.0",
   "devDependencies": {
     "grunt": "0.4.5",
     "grunt-wiredep": "~2.0.0",
