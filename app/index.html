@@ -6,9 +6,11 @@
     <title>Jarvis web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+    <!-- build:css({.tmp,app}) styles/bootstrap.css -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/app.css -->
     <link rel="stylesheet" href="styles/app.css">
-    <link rel="stylesheet" href="styles/other.css">
     <!-- endbuild -->
 </head>
 <body>
@@ -52,11 +54,11 @@
     <script src="../bower_components/angular-google-chart/ng-google-chart.js"></script>
     <script src="../bower_components/lodash/dist/lodash.compat.js"></script>
     <script src="../bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="../bower_components/angular-socket-io/socket.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js scripts/app.js -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/test.js"></script>
     <!-- endbuild -->
 </body>
 </html>

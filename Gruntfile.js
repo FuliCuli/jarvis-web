@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 
     wiredep: {
       target: {
-        src: '<%= project.dist %>/index.html'
+        src: '<%= project.app %>/index.html'
       }
     },
 
